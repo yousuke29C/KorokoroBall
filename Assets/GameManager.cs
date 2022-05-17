@@ -10,4 +10,8 @@ public class GameManager : MonoBehaviour
         string activeSceneName = SceneManager.GetActiveScene().name;
         SceneManager.LoadScene(activeSceneName);
     }
+    public void ChangeScene(string nextScene)//新しくメソッドを追加
+    {
+        SceneManager.LoadScene(nextScene);
+    }
 }
